@@ -41,7 +41,7 @@ az network nsg rule create \
 
 **Evidence:**
 
-![NSG rules before/after](docs/screenshots/nsg-rules-before-after.png)
+![NSG rules before/after](docs/nsg-rules-before-after.png)
 
 ### 2. Subscription quota restriction on B-series VMs
 **Problem:** `Standard_B1s` deployment failed with `SkuNotAvailable`. Initial assumption was regional capacity — but `az vm list-skus` showed the entire A/B-series family absent from the region's SKU list entirely, not just flagged as restricted.
